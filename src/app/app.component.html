@@ -1,0 +1,36 @@
+<router-outlet></router-outlet>
+<table class="table table-bordered table-dark" id="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Image</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr  *ngFor="let item of Array1">
+        <td>{{item.id}}</td>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.email}}</td>
+        <td>
+          <img src="{{item.avatar}}" alt="">
+        </td>
+      </tr>
+      <tr  *ngFor="let item of Array2">
+        <td>{{item.id}}</td>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.email}}</td>
+        <td>
+          <img src="{{item.avatar}}" alt="">
+        </td>
+      </tr>
+    
+  
+  </tbody>
+</table>
